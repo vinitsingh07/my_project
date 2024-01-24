@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Clear Explained</title>
+    <style>
+        /* CREAT CSS MODEL */
+        *{
+            box-sizing: border-box ;
+
+        }
+        .container{
+            width: 900px;
+            border: 3px solid chocolate;
+            margin: 20px auto;
+            background-color: rgb(250, 230, 174);
+
+
+        }
+        .item{
+            border: 3px solid gray;
+            background-color: rgb(245, 211, 211);
+            margin: 12px 3px;
+            padding: 12px 3px;
+        }
+        /* FLOAT AND CLEAR */
+        #fruit{
+            float: left;
+            width: 440px;
+            height: 465px;
+        }
+        #grocery{
+            float: right;
+            width: 440px;
+            height: 465px;
+
+        }
+        #vegetables{
+            /* float: left;
+            width: 50px; */
+            clear: both;
+
+        }
+        h1{
+            width: 455px;
+            margin: auto;
+            
+        }
+        /* styling buttons with Pseudo Selector */
+        .log{
+            background-color: antiquewhite;
+            padding: 12px;
+            margin: auto;
+            width: 666px;
+            border: 2px solid black;
+        }
+        a{
+            text-decoration: none;
+        }
+        .bnt{
+            margin: 10px;
+            background-color: rgb(188, 211, 255);
+            padding: 7px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 5px;
+            box-shadow: 0 9px #999;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .bnt:hover{
+            color: black;
+            background-color: rgb(245, 183, 196);
+        }
+        .bnt:active{
+            color: rgb(126, 0, 243);
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        .bnt:visited{
+            background-color: rgb(207, 248, 153);
+        }
+    </style>
+</head>
+<body>
+    <h2 style="background-color: rgb(243, 169, 169); color: rgb(247, 211, 11); text-align: center; font-size: 50px; font-weight: bolder; border: 3px solid black; padding: 12px; border-radius: 10px;">Css float and clear - Styling Buttons</h2>
+    <div class="container">
+        <h1>&nbsp;Float and Clear Explained</h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">
+                Apple – सेब (Seb)Banana – केला (Kela)Mango – आम (Aam)Orange – संतरा (Santara)Grapes – अंगूर (Angoor)Pineapple – अनानास (Ananas)Watermelon – तरबूज (Tarbuj) Papaya – पपीता (Papita अमरूद(Amrud)Pomegranate – अनार (Anar)  Raisin – किशमिश (Kishmish)  Date – खजूर (Khajoor)  Prunes – सूखे आलू (Sukhe Aloo)  Cranberry – क्रैनबेरी (Cranberry) Mango – सूखा आम (Sookha Pineapple – सूखा अनानास (Sookha Ananas) Papaya – सूखा पपीता (Sookha Papita) Kiwi – सूखी कीवी (Sookhi Kiwi) Figs – सूखे अंजीर (Sukhe Anjeer) Apricots – सूखे खुबानी (Sukhe Khubani)
+            </p>
+        </div>
+        <div id="grocery" class="item">
+            <h3>Grocery</h3>
+            <p id="fruitpara" class="para">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit culpa molestias ipsa recusandae, similique cum in rem atque expedita tempore dignissimos. Voluptatum ad nobis aperiam, esse exercitationem expedita saepe perspiciatis labore et! Voluptatem sequi blanditiis libero illum vero porro Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti mollitia deleniti molestias consequatur ipsum cum! Facilis dolore vitae quisquam. Beatae maiores autem, totam quaerat ab repellendus expedita hic porro ipsam eos iste ut ratione neque at ex consequuntur temporibus cum omnis recusandae tempore atque nulla provident molestiae? Minima repellendus explicabo, possimus eveniet optio ut hic voluptates, veniam deleniti consequatur corporis Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit reiciendis inventore soluta, saepe fugiat sequi. Quisquam eveniet enim voluptatibus facilis, libero laboriosam tenetur ipsa perferendis modi officiis temporibus blanditiis voluptates? Molestiae ducimus eveniet laudantium, maxime culpa distinctio dicta incidunt officia odit voluptatibus vitae exercitationem sapiente. Eos voluptate minima dolor aut!  
+            </p>
+        </div>
+        <div id="vegetables" class="item">
+            <h3>Vegetables</h3>
+            <p id="fruitpara" class="para">
+                Tomato	 Bottle Gourd	लौकी  Potato	आलू  Pea	मटर Green Chili	हरी मिर्च Cucumber	खीरा  Onion	प्याज Cauliflower	फूल गोभी Bitter Gourd	करेला Pointed Gourd	परवल Cabbage	गोभी  Beat-root	चुकंदर Bean	सेम  Jack-fruit	कटहल  Ridge Gourd	तरोई  Sponge Gourd	नेनुआ (घेवडा) Ginger	अदरक  Capsicum	शिमला मीर्च  Pumpkin	कद्द  Brinjal	बैगन  Spinach	पालक  Coriander Leaf	धनिया पत्ता  Round Melon	टिंडा   Colocasia Root	अरवी   Turnips	शलजम   Mushroom	मशरू   Garlic	लहसून
+                Sweet-Potato	शकरकंद (गंजी)  Green Onion	हरा प्याज  Dill	सोय  Radish	मूली Mint	पुदीना Soya beans	सोयाबीन Green-Mustard	हरा सरसों Wild Spinach	जंगली पालक
+                Fava beans	बाकल  French beans	फ्रेंच बीन्स Kideny beans	राजम Drumstick	सहजन Tendli Gourd	कुदरुन White Brinjal	सफेद बैगन Curry leaves	करी पत्ता Tamarind	इमली Raw papaya	कच्चा पपीता Olive	जैतुन Natal plum	करौंदा Keri	कच्चा आम/ अमिया Baby corn	मक्का  Cluster beans	ग्वार की फली  Amaranth leaves	चौराई Yamरतालु
+                Ash gourd	पेठा Spine gourd	ककोर  Red chili	लाल मिर्च  Chickpea	काबुली चना Lotus cucumber	कमल ककड़ी Runner beans	सेम की फली Elephant foot yam	जिमीकंद Cassava	कसावा
+                Chives	प्याज का पत्ता Ceylon spinach	पोई Raw banana flower	कच्चे केले का फूल Bamboo shoot	बांस के कोपले Taro root	कान्दू
+            </p>
+        </div>
+    </div> 
+   <div style="margin-left: 750px;">
+        <img src="/IMAGE/FLOAT AND CLEAR.png" alt="">
+   </div> 
+   <h2 style="margin-left: 730px; background-color: aqua;width: 400px; padding: 12px;box-shadow: 10px 5px 5px red;"> Styling buttons with Pseudo Selector</h2>
+   <div class="log" id="mass">
+    <h3> Styling link & buttons</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore dolor repudiandae quisquam odit iusto cum veniam sequi deleniti non qui accusamus repellendus sint, obcaecati animi reprehenderit quaerat eveniet inventore corporisLorem ipsum dolor sit amet consectetur adipisicing elit. Placeat excepturi aliquam aspernatur repudiandae quos, incidunt cupiditate vero cum ullam corrupti molestias magni assumenda repellendus saepe facere expedita architecto ex reprehenderit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure odio doloremque hic accusamus. Vero recusandae obcaecati cum, sed saepe, corporis ab deleniti totam ducimus reprehenderit magnam illum impedit ratione dolorem.</p>
+    <a href="https://www.yahoo.com/"target="--blank" class="bnt">Read more</a>
+    <a href="https://www.google.com/"target="--blank"><button class="bnt">contact us</button></a>
+    </div><br>
+    <div style="margin-left: 628px;">
+        <img src="/IMAGE/buttons styling.png" alt="">
+    </div>
+    <p style="border-top: 3px solid black; text-align: center; font-size: larger;">
+vinit singh
+    </p> 
+</body>
+</html>
